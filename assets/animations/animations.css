@@ -1,0 +1,11 @@
+#profile_img:hover{
+    -webkit-transition: width 1s height 1s;
+    transition: width 0.6s, height 0.6s;
+    transition-timing-function: ease-out;
+    height: 300px;
+    width: 300px;
+}
+#profile_img{
+    -webkit-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+}

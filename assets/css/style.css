@@ -1,0 +1,12 @@
+img {
+    border-radius: 50%;
+
+    height: 200px;
+    width: 200px;
+  }
+
+  #profile_img{
+      position: fixed;
+      top: 30%;
+      left: 40%;
+  }
