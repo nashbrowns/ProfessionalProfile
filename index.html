@@ -17,22 +17,41 @@
     <!-- Link to css animations -->
     <link rel="stylesheet" type="text/css" href="assets/animations/animations.css">
 
+  <!-- Links to Javascript/jQuery CDN -->
+<!--   <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+
 </head>
 
 <body>
 
 
-    <div class="jumbotron vertical-center">
-        <div class = "container">
-            <div class = "row">
-                <div class = "col"></div>
-                <div class = "col">
-                    <img id="profile_img" src="assets/images/nash_profile.png" alt="Profile Picture">
+    <div class="jumbotron vertical-center" id="backGround">
+        <div class="container">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                    <div class = "text-center" id="profile">
+                        <img id="profile_img" src="assets/images/nash_profile.png" alt="Profile Picture">
+                    </div>
                 </div>
-                <div class = "col"></div>
+                <div class="col">
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col">
+                    <div id = "bio"><!-- Bio added here --></div>
+                </div>
             </div>
         </div>
     </div>
+
+
+
 
     <!-- Link to javascript -->
     <script src="assets/javascript/app.js"></script>
