@@ -116,17 +116,16 @@ $(document).ready( function() {
     });
 
     $('#portfolio_img').on('click', function() {
-
-        genPort();
-
-/*         if ($('#bioCon').css('opacity') == 0) {
-            shiftImg(true);
-            $('#bioCon').css('opacity', 1);
+        if(portClick === false){
+            $('#port').attr('style','z-index: 1');
+            $('#port').css('opacity', 1);
+            portClick = true;
         }
-        else {
-            shiftImg(false);
-            $('#bioCon').css('opacity', 0);
-        } */
+        else{
+            $('#port').css('opacity', 0);
+            $('#port').attr('style','z-index: -1');
+            portClick = false;
+        }
     });
 
 });

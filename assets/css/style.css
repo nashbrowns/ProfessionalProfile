@@ -4,18 +4,18 @@ body{
 .jumbotron{
     color: rgba(0, 51, 102, 1);
 }
-/* img {
-    position: relative;
-    border-radius: 50%;
-    height: 300px;
-    width: 300px;
-} */
+h2{
+    font-family: 'Roboto', sans-serif;
+}
 
 #profile_img{
     position: relative;
     border-radius: 50%;
     height: 300px;
     width: 300px;
+    border-width: 5px;
+    border-color: rgb(65, 49, 49);
+    border-style: solid;
 }
 
 #portfolio_img{
