@@ -1,6 +1,6 @@
 #profile:hover img{
-    -webkit-transition: width 0.4s height 0.4s;
-    transition: width 0.4s, height 0.4s;
+    -webkit-transition: width 0.3s height 0.3s;
+    transition: width 0.3s, height 0.3s;
     height: 350px;
     width: 350px;
 }
@@ -10,8 +10,8 @@
 }
 
 #portfolio:hover img{
-    -webkit-transition: width 1s height 1s;
-    transition: width 1s, height 1s;
+    -webkit-transition: width 0.3s height 0.3s;
+    transition: width 0.3s, height 0.3s;
     height: 350px;
     width: 350px;
 }
@@ -27,9 +27,9 @@
 	color: #fff;
 	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
 	background-size: 400% 400%;
-	-webkit-animation: Gradient 15s ease infinite;
-	-moz-animation: Gradient 15s ease infinite;
-	animation: Gradient 15s ease infinite;
+	-webkit-animation: Gradient 20s ease infinite;
+	-moz-animation: Gradient 20s ease infinite;
+	animation: Gradient 20s ease infinite;
 }
 
 @-webkit-keyframes Gradient {
@@ -68,9 +68,7 @@
 	}
 }
 
-#bioCon {
-	position: relative;
-	z-index: -1;
+#bio {
 	opacity: 0;
 	-webkit-transition: all 0.5s ease-in-out;
 	-moz-transition: all 0.5s ease-in-out;
@@ -79,14 +77,12 @@
 	transition: all 0.5s ease-in-out;
 }
 #port {
-	position: relative;
-	z-index: -1;
 	opacity: 0;
-	-webkit-transition: all 0.5s ease-in-out;
-	-moz-transition: all 0.5s ease-in-out;
-	-ms-transition: all 0.5s ease-in-out;
-	-o-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	transition: all 0.8s ease-in-out;
 }
 
 .moveUp{

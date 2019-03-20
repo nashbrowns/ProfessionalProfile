@@ -13,9 +13,6 @@ h2{
     border-radius: 50%;
     height: 300px;
     width: 300px;
-    border-width: 5px;
-    border-color: rgb(65, 49, 49);
-    border-style: solid;
 }
 
 #portfolio_img{
@@ -31,5 +28,9 @@ h2{
   
     display: flex;
     align-items: center;
+}
+
+.carousel-item{
+    background-color: black;
 }
 

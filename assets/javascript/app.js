@@ -102,28 +102,23 @@ function shiftImg(upOrNot){
 $(document).ready( function() {
 
     $('#profile_img').on('click', function() {
-
-        genBio();
-
-        if ($('#bioCon').css('opacity') == 0) {
-            shiftImg(true);
-            $('#bioCon').css('opacity', 1);
+        if(bioClick === false){
+            $('#bio').css('opacity', 1);
+            bioClick = true;
         }
-        else {
-            shiftImg(false);
-            $('#bioCon').css('opacity', 0);
+        else{
+            $('#bio').css('opacity', 0);
+            bioClick = false;
         }
     });
 
     $('#portfolio_img').on('click', function() {
         if(portClick === false){
-            $('#port').attr('style','z-index: 1');
             $('#port').css('opacity', 1);
             portClick = true;
         }
         else{
             $('#port').css('opacity', 0);
-            $('#port').attr('style','z-index: -1');
             portClick = false;
         }
     });
