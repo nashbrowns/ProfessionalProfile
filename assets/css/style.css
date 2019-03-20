@@ -1,12 +1,30 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
 .jumbotron{
     color: rgba(0, 51, 102, 1);
 }
-img {
+/* img {
     position: relative;
     border-radius: 50%;
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
+} */
+
+#profile_img{
+    position: relative;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
 }
+
+#portfolio_img{
+    position: relative;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+}
+
 .vertical-center {
     min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
     min-height: 100vh; /* These two lines are counted as one :-)       */
@@ -14,3 +32,4 @@ img {
     display: flex;
     align-items: center;
 }
+
