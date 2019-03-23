@@ -102,14 +102,20 @@ function shiftImg(upOrNot){
 
 $(document).ready( function() {
 
+    var html = document.documentElement;
+
     $('#profile_img').on('click', function() {
         if(bioClick === false){
             $('#bio').css('opacity', 1);
             bioClick = true;
+
+            html.scrollTop += 400; 
         }
         else{
             $('#bio').css('opacity', 0);
             bioClick = false;
+
+            
         }
     });
 
@@ -117,10 +123,14 @@ $(document).ready( function() {
         if(portClick === false){
             $('#port').css('opacity', 1);
             portClick = true;
+
+            html.scrollTop += 400;
         }
         else{
             $('#port').css('opacity', 0);
             portClick = false;
+
+            
         }
     });
 
@@ -128,6 +138,8 @@ $(document).ready( function() {
         if(resClick === false){
             $('#res').css('opacity', 1);
             resClick = true;
+
+            html.scrollTop += 400;
         }
         else{
             $('#res').css('opacity', 0);

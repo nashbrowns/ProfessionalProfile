@@ -1,8 +1,8 @@
 #profile:hover img{
     -webkit-transition: width 0.3s height 0.3s;
     transition: width 0.3s, height 0.3s;
-    height: 350px;
-    width: 350px;
+    height: 450px;
+    width: 450px;
 }
 #profile img{
     -webkit-transition: all 0.4s ease-out;
@@ -12,8 +12,8 @@
 #portfolio:hover img{
     -webkit-transition: width 0.3s height 0.3s;
     transition: width 0.3s, height 0.3s;
-    height: 350px;
-    width: 350px;
+    height: 450px;
+    width: 450px;
 }
 #portfolio img{
     -webkit-transition: all 0.4s ease-out;
@@ -23,8 +23,8 @@
 #resume:hover img{
     -webkit-transition: width 0.3s height 0.3s;
     transition: width 0.3s, height 0.3s;
-    height: 350px;
-    width: 350px;
+    height: 450px;
+    width: 450px;
 }
 #resume img{
     -webkit-transition: all 0.4s ease-out;
@@ -38,9 +38,9 @@
 	color: #fff;
 	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
 	background-size: 400% 400%;
-	-webkit-animation: Gradient 20s ease infinite;
-	-moz-animation: Gradient 20s ease infinite;
-	animation: Gradient 20s ease infinite;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
 }
 
 @-webkit-keyframes Gradient {
@@ -104,13 +104,6 @@
 	transition: all 0.8s ease-in-out;
 }
 
-.moveUp{
-	-webkit-animation: moveUp 0.5s;
-	animation: moveUp 0.5s;
-	animation-fill-mode: both;
-	animation-direction: normal;
-}
-
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes moveUp {
 	from {bottom: 0px;}
@@ -123,13 +116,42 @@
 	to {bottom: 20px;}
   }
 
-/* Spin Animation */
-/* #profile_img:hover{
-    -webkit-animation:spin 4s linear infinite;
-    -moz-animation:spin 4s linear infinite;
-    animation:spin 4s linear infinite;
-}
+  @media only screen and (max-width: 600px) {
 
-@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } } */
+	#profile:hover img{
+		-webkit-transition: width 0.3s height 0.3s;
+		transition: width 0.3s, height 0.3s;
+		height: 300px;
+		width: 300px;
+	}
+	#profile img{
+		-webkit-transition: all 0.4s ease-out;
+		transition: all 0.4s ease-out;
+	}
+	
+	#portfolio:hover img{
+		-webkit-transition: width 0.3s height 0.3s;
+		transition: width 0.3s, height 0.3s;
+		height: 300px;
+		width: 300px;
+	}
+	#portfolio img{
+		-webkit-transition: all 0.4s ease-out;
+		transition: all 0.4s ease-out;
+	}
+	
+	#resume:hover img{
+		-webkit-transition: width 0.3s height 0.3s;
+		transition: width 0.3s, height 0.3s;
+		height: 300px;
+		width: 300px;
+	}
+	#resume img{
+		-webkit-transition: all 0.4s ease-out;
+		transition: all 0.4s ease-out;
+	}
+	#resumeEmbed{
+		width: 100%;
+		height: 300px;
+	}
+  }

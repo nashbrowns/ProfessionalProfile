@@ -2,32 +2,35 @@ body{
     font-family: 'Ubuntu', sans-serif;
 }
 .jumbotron{
-    color: rgba(179, 216, 252, 0.4);
+    color: rgb(15, 22, 29);
 }
 h2{
     font-family: 'Roboto', sans-serif;
     font-weight: bolder;
 }
-
+span{
+    padding: 0px 10px 0px 10px;
+    color: aliceblue;
+}
 #profile_img{
     position: relative;
     border-radius: 50%;
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
 }
 
 #portfolio_img{
     position: relative;
     border-radius: 50%;
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
 }
 
 #resume_img{
     position: relative;
     border-radius: 50%;
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
 }
 
 .vertical-center {
@@ -45,4 +48,34 @@ h2{
 #contentContainer{
     background-color: rgba(20, 20, 26, 0.4);
 }
+
+#footer .navbar .navbar-nav{
+    display: inline-block;
+    float:none;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #profile_img{
+        position: relative;
+        border-radius: 50%;
+        height: 300px;
+        width: 300px;
+    }
+    
+    #portfolio_img{
+        position: relative;
+        border-radius: 50%;
+        height: 300px;
+        width: 300px;
+    }
+    
+    #resume_img{
+        position: relative;
+        border-radius: 50%;
+        height: 300px;
+        width: 300px;
+    }
+  }
 
