@@ -105,11 +105,20 @@ $(document).ready( function() {
     var html = document.documentElement;
 
     $('#profile_img').on('click', function() {
+
+        var w = window.innerWidth;
+        
+
         if(bioClick === false){
             $('#bio').css('opacity', 1);
             bioClick = true;
 
-            html.scrollTop += 400; 
+            if(w>600){
+                html.scrollTop += 400;
+            }
+            else{
+                html.scrollTop += 100;
+            } 
         }
         else{
             $('#bio').css('opacity', 0);
@@ -120,11 +129,19 @@ $(document).ready( function() {
     });
 
     $('#portfolio_img').on('click', function() {
+
+        var w = window.innerWidth;
+
         if(portClick === false){
             $('#port').css('opacity', 1);
             portClick = true;
 
-            html.scrollTop += 400;
+            if(w>600){
+                html.scrollTop += 400;
+            }
+            else{
+                html.scrollTop += 100;
+            }
         }
         else{
             $('#port').css('opacity', 0);
@@ -135,11 +152,19 @@ $(document).ready( function() {
     });
 
     $('#resume_img').on('click', function() {
+
+        var w = window.innerWidth;
+        
         if(resClick === false){
             $('#res').css('opacity', 1);
             resClick = true;
 
-            html.scrollTop += 400;
+            if(w>600){
+                html.scrollTop += 400;
+            }
+            else{
+                html.scrollTop += 100;
+            }
         }
         else{
             $('#res').css('opacity', 0);
