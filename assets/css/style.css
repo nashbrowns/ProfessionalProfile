@@ -2,10 +2,11 @@ body{
     font-family: 'Ubuntu', sans-serif;
 }
 .jumbotron{
-    color: rgba(0, 51, 102, 1);
+    color: rgb(179, 216, 252);
 }
 h2{
     font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
 }
 
 #profile_img{
@@ -39,5 +40,9 @@ h2{
 
 .carousel-item{
     background-color: black;
+}
+
+#contentContainer{
+    background-color: rgba(20, 20, 26, 0.4);
 }
 
