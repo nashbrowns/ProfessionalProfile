@@ -20,6 +20,17 @@
     transition: all 0.4s ease-out;
 }
 
+#resume:hover img{
+    -webkit-transition: width 0.3s height 0.3s;
+    transition: width 0.3s, height 0.3s;
+    height: 350px;
+    width: 350px;
+}
+#resume img{
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+
 /* Gradient background */
 #backGround{
 	width: 100%;
@@ -77,6 +88,14 @@
 	transition: all 0.5s ease-in-out;
 }
 #port {
+	opacity: 0;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	transition: all 0.8s ease-in-out;
+}
+#res {
 	opacity: 0;
 	-webkit-transition: all 0.8s ease-in-out;
 	-moz-transition: all 0.8s ease-in-out;

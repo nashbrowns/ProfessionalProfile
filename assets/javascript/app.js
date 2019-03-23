@@ -1,5 +1,6 @@
 bioClick = false;
 portClick = false;
+resClick = false;
 
 function genBio(){
     if(bioClick){
@@ -120,6 +121,17 @@ $(document).ready( function() {
         else{
             $('#port').css('opacity', 0);
             portClick = false;
+        }
+    });
+
+    $('#resume_img').on('click', function() {
+        if(resClick === false){
+            $('#res').css('opacity', 1);
+            resClick = true;
+        }
+        else{
+            $('#res').css('opacity', 0);
+            resClick = false;
         }
     });
 
