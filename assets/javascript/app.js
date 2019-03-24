@@ -86,20 +86,6 @@ function genPort(){
     } 
 }
 
-function shiftImg(upOrNot){
-    var divHeight = $('#bioCon').height();
-
-    if(upOrNot === true){
-        /* $('#profile_img').attr('style', 'position: relative; bottom: 20px;'); */
-        $('#profile_img').addClass('moveUp');
-        $('#profile_title').addClass('moveUp');
-    }
-    else{
-        $('#profile_img').removeClass('moveUp');
-        $('#profile_title').removeClass('moveUp');
-    }
-}
-
 $(document).ready( function() {
 
     var html = document.documentElement;
@@ -111,20 +97,11 @@ $(document).ready( function() {
 
         if(bioClick === false){
             $('#bio').css('opacity', 1);
-            bioClick = true;
-
-            if(w>600){
-                html.scrollTop += 400;
-            }
-            else{
-                html.scrollTop += 100;
-            } 
+            bioClick = true; 
         }
         else{
             $('#bio').css('opacity', 0);
-            bioClick = false;
-
-            
+            bioClick = false;   
         }
     });
 
@@ -135,19 +112,10 @@ $(document).ready( function() {
         if(portClick === false){
             $('#port').css('opacity', 1);
             portClick = true;
-
-            if(w>600){
-                html.scrollTop += 400;
-            }
-            else{
-                html.scrollTop += 100;
-            }
         }
         else{
             $('#port').css('opacity', 0);
-            portClick = false;
-
-            
+            portClick = false;     
         }
     });
 
@@ -158,13 +126,6 @@ $(document).ready( function() {
         if(resClick === false){
             $('#res').css('opacity', 1);
             resClick = true;
-
-            if(w>600){
-                html.scrollTop += 400;
-            }
-            else{
-                html.scrollTop += 100;
-            }
         }
         else{
             $('#res').css('opacity', 0);

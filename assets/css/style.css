@@ -55,6 +55,19 @@ span{
     text-align: center;
 }
 
+#linkedInFooter{
+    height: 40px;
+    width: 40px;
+}
+
+#linkedIn_img{
+    height: 40px;
+    width: 40px;
+}
+#port{
+    width: 60%;
+}
+
 @media only screen and (max-width: 600px) {
 
     #profile_img{
@@ -81,8 +94,20 @@ span{
     #emailFooter{
         font-size: 10px;
     }
+
     #linkedinFooter{
         font-size: 10px;
+        height: 30px;
+        width: 30px;
+    }
+
+    #linkedIn_img{
+        height: 30px;
+        width: 30px;
+    }
+
+    #port{
+        width: 80%;
     }
   }
 
