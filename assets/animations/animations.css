@@ -116,6 +116,11 @@
 	to {bottom: 20px;}
   }
 
+  #resumeEmbed{
+	width: 100%;
+	height: 1200px;
+}
+
   @media only screen and (max-width: 600px) {
 
 	#profile:hover img{
@@ -152,6 +157,6 @@
 	}
 	#resumeEmbed{
 		width: 100%;
-		height: 300px;
+		height: 600px;
 	}
   }
